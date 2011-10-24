@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="ImageViewer" default="all" basedir="D:\July\Workspace\LoginManager">
+	<description>
+		This is build file for GWT module 'com.gwt.tutorial.LoginManager.LoginManager' deployment.
+		GWT Designer generates it each time when you initiate deployment.
+		
+		You can use this file later for manual deployment, but keep in mind, that
+		classpath is hardcoded in it, so after changes in classpath you should
+		regenerate build file.
+	</description>
+
+	<property name="gwt.home" value="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906/gwt-2.4.0" />
+	<property name="gwt.module.id" value="com.gwt.tutorial.LoginManager.LoginManager" />
+	<property name="war.name" value="LoginManager.war" />
+
+	<target name="jars" description="Package up the module project and required projects as jars">
+		<mkdir dir="war/WEB-INF/lib" />
+		<!--=== LoginManager ===-->
+		<jar destfile='war/WEB-INF/lib/LoginManager.jar'>
+			<fileset dir="D:/July/Workspace/LoginManager/src">
+				<include name="**"/>
+			</fileset>
+			<fileset dir="D:/July/Workspace/LoginManager/war/WEB-INF/classes">
+				<include name="**/*.class"/>
+			</fileset>
+		</jar>
+		<copy todir='war/WEB-INF/lib'>
+			<fileset file="D:\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906\gwt-2.4.0\gwt-dev.jar"/>
+			<fileset file="D:\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906\gwt-2.4.0\validation-api-1.0.0.GA-sources.jar"/>
+			<fileset file="D:\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906\gwt-2.4.0\validation-api-1.0.0.GA.jar"/>
+		</copy>		
+	</target>
+
+	<target name="gwt-compile" description="Compile to JavaScript">
+		<java classname="com.google.gwt.dev.Compiler" fork="yes" failonerror="true" maxmemory="256m">
+			<classpath>
+				<pathelement location="D:/July/Workspace/LoginManager/src" />
+				<pathelement location="D:/July/Workspace/LoginManager/war/WEB-INF/classes" />
+				<pathelement location="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906/gwt-2.4.0/gwt-user.jar" />
+				<pathelement location="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906/gwt-2.4.0/gwt-dev.jar" />
+				<pathelement location="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar" />
+				<pathelement location="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906/gwt-2.4.0/validation-api-1.0.0.GA.jar" />
+				<pathelement location="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906/gwt-2.4.0/gwt-dev.jar" />
+			</classpath>
+			<arg value="-style"/>
+			<arg value="OBFUSCATED"/>
+			<arg value="${gwt.module.id}" />
+		</java>
+	</target>
+
+	<target name="war" depends="gwt-compile, jars">
+		<delete file="${war.name}" />
+		<jar destfile="${war.name}" basedir="war" duplicate="preserve" />
+	</target>
+	
+	<target name="deploy" depends="war">
+		<move file="${war.name}" todir="" />
+	</target>
+
+	<target name="all" depends="deploy" />
+
+</project>
