@@ -1,0 +1,42 @@
+!SESSION 2011-10-24 10:45:44.609 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2011-10-24 10:45:50.156
+!MESSAGE Registering: com.google.appengine.eclipse.sdkbundle_1.5.4.r37v201109211906
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2011-10-24 10:45:50.531
+!MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.4.0.r37v201109211906
+
+!ENTRY org.eclipse.ui 4 4 2011-10-24 10:49:24.500
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2011-10-24 10:49:25.687 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2011-10-24 10:52:44.890
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2011-10-24 10:54:40.375 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\July\Workspace
+
+!ENTRY org.eclipse.ui 4 4 2011-10-24 11:02:40.109
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2011-10-24 11:28:00.609 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2011-10-24 11:28:21.656
+!MESSAGE Invalid preference page path: XML Syntax

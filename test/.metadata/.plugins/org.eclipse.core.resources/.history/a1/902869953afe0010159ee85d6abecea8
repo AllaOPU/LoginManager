@@ -1,0 +1,12 @@
+package com.gwt.tutorial.LoginManager.client;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.user.client.ui.RootPanel;
+
+public class TestBase implements EntryPoint {
+
+	public void onModuleLoad() {
+		RootPanel rootPanel = RootPanel.get();
+	}
+
+}
