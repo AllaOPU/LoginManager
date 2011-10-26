@@ -1,0 +1,6 @@
+<module>
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.user.theme.standard.Standard"/>
+	<entry-point class="com.gwt.tutorial.LoginManager.client.Loginmanager"/>
+	<entry-point class="com.gwt.tutorial.LoginManager.client.TestBase"/>
+</module>

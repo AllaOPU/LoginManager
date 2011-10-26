@@ -1,0 +1,5 @@
+#Thu Oct 20 13:35:00 EEST 2011
+war.name=Loginmanager.war
+compiler.style=OBFUSCATED
+server.path=
+compiler.memory.max=256m
