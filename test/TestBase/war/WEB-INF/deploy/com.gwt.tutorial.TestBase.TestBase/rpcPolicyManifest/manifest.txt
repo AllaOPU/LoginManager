@@ -1,2 +1,0 @@
-# Module com.gwt.tutorial.TestBase.TestBase
-# RPC service class, partial path of RPC policy file
